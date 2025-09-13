@@ -1,22 +1,18 @@
-# 157-plugin-manager-update
 Plugin Manager Update für Zen Cart 1.5.7j deutsch
+Version 1.0.0
+2025-09-13
 
-## Hinweis: 
-Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlich unter Releases herunterladen:
-* https://github.com/zencartpro/157-plugin-manager-update/releases
-
-## Sinn und Zweck 
-* Viele neuere Module sind als "encapsulated plugin" konzipiert.
-* Seit Zen Cart 1.5.7 deutsch wurde ein Plugin-Manager hinzugefügt, um die Unterstützung für zusätzliche Admin Module unter Verwendung der neuen Architektur zu ermöglichen.
-* Diese Unterstützung wurde seit Zen Cart 1.5.7j schrittweise verbessert und bietet nun auch Unterstützung für Frontend Plugins.
-* Die Plugin-Architektur ermöglicht es, Module in einer hierarchischen Verzeichnisstruktur einzubinden, die die Verzeichnisstruktur von Zen Cart nachahmt. 
-* Damit müssen Plugin-Dateien nicht mehr in den verschiedenen Zen Cart-Verzeichnissen abgelegt werden, sondern befinden sich in Verzeichnissen unterhalb eines zc_plugins-Verzeichnisses.
-* In der Regel sind bei der Integration solcher Module keinerlei Änderungen bestehender Corefiles mehr nötig.
-* Die Module werden dann via Zen Cart Administration unter Module > Plugin-Manager installiert/deinstalliert und aktiviert/deaktiviert.
+Viele neuere Module sind als "encapsulated plugin" konzipiert.
+Seit Zen Cart 1.5.7 deutsch wurde ein Plugin-Manager hinzugefügt, um die Unterstützung für zusätzliche Admin Module unter Verwendung der neuen Architektur zu ermöglichen.
+Diese Unterstützung wurde seit Zen Cart 1.5.7j schrittweise verbessert und bietet nun auch Unterstützung für Frontend Plugins.
+Die Plugin-Architektur ermöglicht es, Module in einer hierarchischen Verzeichnisstruktur einzubinden, die die Verzeichnisstruktur von Zen Cart nachahmt. 
+Damit müssen Plugin-Dateien nicht mehr in den verschiedenen Zen Cart-Verzeichnissen abgelegt werden, sondern befinden sich in Verzeichnissen unterhalb eines zc_plugins-Verzeichnisses.
+In der Regel sind bei der Integration solcher Module keinerlei Änderungen bestehender Corefiles mehr nötig.
+Die Module werden dann via Zen Cart Administration unter Module > Plugin-Manager installiert/deinstalliert und aktiviert/deaktiviert.
 
 Dieses Update bringt die Plugin Manager Funktionalität von 1.5.7j deutsch auf den neuesten Stand von September 2025, so dass auch neuere encapsulated plugins in der deutschen Zen Cart Version 1.5.7j genutzt werden können.
 
-## INSTALLATION
+INSTALLATION
 
 1)
 Shop in den Wartungsmodus setzen
