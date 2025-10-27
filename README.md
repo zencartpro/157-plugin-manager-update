@@ -14,7 +14,7 @@ Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlic
 * In der Regel sind bei der Integration solcher Module keinerlei Änderungen bestehender Corefiles mehr nötig.
 * Die Module werden dann via Zen Cart Administration unter Module > Plugin-Manager installiert/deinstalliert und aktiviert/deaktiviert.
 
-Dieses Update bringt die Plugin Manager Funktionalität von 1.5.7j deutsch auf den neuesten Stand von September 2025, so dass auch neuere encapsulated plugins in der deutschen Zen Cart Version 1.5.7j genutzt werden können.
+Dieses Update bringt die Plugin Manager Funktionalität von 1.5.7j deutsch auf den neuesten Stand von Oktober 2025, so dass auch neuere encapsulated plugins in der deutschen Zen Cart Version 1.5.7j genutzt werden können.
 
 ## INSTALLATION
 
