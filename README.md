@@ -13,8 +13,9 @@ Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlic
 * Damit müssen Plugin-Dateien nicht mehr in den verschiedenen Zen Cart-Verzeichnissen abgelegt werden, sondern befinden sich in Verzeichnissen unterhalb eines zc_plugins-Verzeichnisses.
 * In der Regel sind bei der Integration solcher Module keinerlei Änderungen bestehender Corefiles mehr nötig.
 * Die Module werden dann via Zen Cart Administration unter Module > Plugin-Manager installiert/deinstalliert und aktiviert/deaktiviert.
-
 Dieses Update bringt die Plugin Manager Funktionalität von 1.5.7j deutsch auf den neuesten Stand von Oktober 2025, so dass auch neuere encapsulated plugins in der deutschen Zen Cart Version 1.5.7j genutzt werden können.
+
+## Dieses Update ist Voraussetzung für die Verwendung des neuen PayPal Checkout Moduls (paypalr) ab Version 1.3.0
 
 ## INSTALLATION
 
