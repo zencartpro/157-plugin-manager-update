@@ -5,13 +5,16 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: ModuleFinder.php for newer plugins 2025-09-12 16:11:24Z webchills $
+ * @version $Id: ModuleFinder.php for newer plugins 2025-10-27 20:11:24Z webchills $
  */
 namespace Zencart\ResourceLoaders;
 
 
 use Zencart\FileSystem\FileSystem;
 
+/**
+ * @since ZC v2.1.0
+ */
 class ModuleFinder
 {
     private FileSystem $filesystem;
@@ -28,6 +31,9 @@ class ModuleFinder
     // Locate all modules of the type specified during the class construction,
     // noting that any duplication in zc_plugins **overrides** any base module!
     //
+    /**
+     * @since ZC v2.1.0
+     */
     public function findFromFilesystem(array $installedPlugins): array
     {
         $modules = [];
