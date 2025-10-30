@@ -1,11 +1,11 @@
 <?php
 /**
  * Zen Cart German Specific (210 code in 157)
- * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Copyright 2003-2025 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: FilesLanguageLoader.php 2025-10-27 17:27:24Z webchills $
+ * @version $Id: FilesLanguageLoader.php 2025-10-29 15:27:24Z webchills $
  */
 
 namespace Zencart\LanguageLoader;

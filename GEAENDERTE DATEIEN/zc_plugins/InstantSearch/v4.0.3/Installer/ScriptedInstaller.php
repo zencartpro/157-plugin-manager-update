@@ -6,7 +6,7 @@
  * @see      https://github.com/marco-pm/zencart_instantsearch
  * @license  GNU Public License V2.0
  * modified for Zen Cart German
- * 2024-10-27 webchills
+ * 2025-10-30 webchills
  */
 
 use Zencart\PluginSupport\ScriptedInstaller as ScriptedInstallBase;

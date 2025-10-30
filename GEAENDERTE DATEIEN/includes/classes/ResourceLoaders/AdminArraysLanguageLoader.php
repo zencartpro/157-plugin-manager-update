@@ -5,7 +5,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: AdminArraysLanguageLoader.php 2025-10-27 17:27:24Z webchills $
+ * @version $Id: AdminArraysLanguageLoader.php 2025-10-29 15:27:24Z webchills $
  */
 
 namespace Zencart\LanguageLoader;
@@ -21,7 +21,7 @@ class AdminArraysLanguageLoader extends ArraysLanguageLoader
     public function loadInitialLanguageDefines($mainLoader): void
     {
         $this->mainLoader = $mainLoader;
-        $this->loadBaseLanguageFile();
+        $this->loadBaseLanguageFiles();
         $this->loadLanguageForView();
         $this->loadLanguageExtraDefinitions();
     }
@@ -67,7 +67,7 @@ class AdminArraysLanguageLoader extends ArraysLanguageLoader
     /**
      * @since ZC v2.1.0
      */
-    protected function loadBaseLanguageFile()
+    protected function loadBaseLanguageFiles()
     {
         // -----
         // First, load the main language file(). The 'lang.english.php' file is always
