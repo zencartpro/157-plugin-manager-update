@@ -30,6 +30,7 @@ Wenn Sie Zen Cart 1.5.7j gerade frisch installiert haben und noch keinerlei Änd
 Wenn Sie Zen Cart 1.5.7j schon länger im Einsatz haben und schon einmal Änderungen an Dateien vorgenommen oder andere Module eingebaut haben, dann laden Sie die Dateien keinesfalls einfach hoch.
 Vergleichen Sie alle Dateien im Ordner GEAENDERTE DATEIEN mit den entsprechenden Dateien in Ihrem Shop und nehmen Sie die Änderungen manuell per WinMerge oder BeyondCompare vor.
 Dann spielen Sie die geänderten Dateien in der gezeigten Struktur ein.
+Nicht vergleichen müssen Sie den Inhalt des Ordners zc_plugins. Überschreiben Sie die bestehenden Dateien des Instant Search Plugins einfach, sie wurden neu strukturiert um mit dem aktuellen Modulmanager kompatibel zu sein.
 
-4)
+5)
 Wartungsmodus wieder deaktivieren
