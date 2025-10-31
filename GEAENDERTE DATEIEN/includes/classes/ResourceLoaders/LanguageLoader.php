@@ -5,7 +5,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: LanguageLoader.php for newer plugins 2025-10-27 17:27:24Z webchills $
+ * @version $Id: LanguageLoader.php for newer plugins 2025-10-30 08:27:24Z webchills $
  */
 
 namespace Zencart\LanguageLoader;
@@ -73,13 +73,16 @@ class LanguageLoader
     /**
      * @since ZC v1.5.8
      */
-    public function loadModuleDefinesFromFile($baseDirectory, $language, $module_type, $languageFile)
+    public function loadModuleDefinesFromFile(string $baseDirectory, string $language, string $module_type, string $languageFile): bool
     {
         $defs = $this->arrayLoader->loadModuleDefinesFromArrayFile(DIR_FS_CATALOG . 'includes/languages/', $language, $module_type, $languageFile);
 
-        $this->arrayLoader->makeConstants($defs); 
-        $this->fileLoader->loadFileDefineFile(DIR_FS_CATALOG . DIR_WS_LANGUAGES . $language . $baseDirectory . $module_type . '/' . $languageFile);
-        return true; 
+        $this->arrayLoader->makeConstants($defs);
+        if ($module_type !== '') {
+            $module_type .= '/';
+        }
+        $this->fileLoader->loadFileDefineFile(DIR_FS_CATALOG . DIR_WS_LANGUAGES . $language . $baseDirectory . $module_type . $languageFile);
+        return true;
     }
 
     /**

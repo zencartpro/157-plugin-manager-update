@@ -43,9 +43,9 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
         // language files, i.e. files that are 'similar' to the current page's name
         // but not specifically the 'base' current-page file.
         //
-        // Start with any such files in the 'german' language directory.  If the current
-        // session language is different than 'german', load those files, overwriting any
-        // similarly-named definitions present in 'german'.
+        // Start with any such files in the 'english' language directory.  If the current
+        // session language is different than 'english', load those files, overwriting any
+        // similarly-named definitions present in 'english'.
         //
         $definesList = $this->loadCurrentPageExtraFilesFromDir(DIR_WS_LANGUAGES . $this->fallback);
         if ($_SESSION['language'] !== $this->fallback) {
@@ -95,7 +95,7 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
     protected function loadCurrentPageBaseFile(): void
     {
         // -----
-        // First, load the main language file(s) for the current page . The 'german/lang.{page-name}.php'
+        // First, load the main language file(s) for the current page . The 'english/lang.{page-name}.php'
         // file is always loaded, with its constant values possibly overwritten by a different page-specific
         // language file (e.g. 'spanish/lang.{page-name}.php').
         //
@@ -169,9 +169,9 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
     protected function loadLanguageExtraDefinitions(): void
     {
         // -----
-        // First, load the fallback (i.e. 'german') extra language definitions. If the current
-        // session language is different than 'german', load that language's files; they'll
-        // overwrite any like-named definitions in the 'german' fallback.
+        // First, load the fallback (i.e. 'english') extra language definitions. If the current
+        // session language is different than 'english', load that language's files; they'll
+        // overwrite any like-named definitions in the 'english' fallback.
         //
         // Any definitions found here will overwrite any definitions in the 'main' language files.
         //
@@ -183,9 +183,9 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
         }
 
         // -----
-        // Next, load the fallback (i.e. 'german') extra language definitions from any enabled zc_plugins. If the current
-        // session language is different than 'german', load that language's files too; they'll
-        // overwrite any like-named definitions in the 'german' fallback.
+        // Next, load the fallback (i.e. 'english') extra language definitions from any enabled zc_plugins. If the current
+        // session language is different than 'english', load that language's files too; they'll
+        // overwrite any like-named definitions in the 'english' fallback.
         //
         // Any definitions found here will overwrite any non-plugin extra definitions as well as any definitions
         // in the 'main' language files.
@@ -198,9 +198,9 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
         $defineList = array_merge($defineList, $defineListPlugin);
 
         // -----
-        // Next, load the fallback (i.e. 'german') extra language definitions from any enabled zc_plugins' 'default' directory.
-        // If the current session language is different than 'german', load that language's files too; they'll
-        // overwrite any like-named definitions in the 'german' fallback.
+        // Next, load the fallback (i.e. 'english') extra language definitions from any enabled zc_plugins' 'default' directory.
+        // If the current session language is different than 'english', load that language's files too; they'll
+        // overwrite any like-named definitions in the 'english' fallback.
         //
         // Any definitions found here will overwrite any non-'default' plugins' extra definitions, non-plugin extra definitions
         // as well as any definitions in the 'main' language files.
@@ -232,7 +232,7 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
     protected function loadMainLanguageFiles(): void
     {
         // -----
-        // First, load the main language file(s). The 'lang.german.php' file is always
+        // First, load the main language file(s). The 'lang.english.php' file is always
         // loaded, with its constant values possibly overwritten by a different main
         // language file (e.g. lang.spanish.php).
         //
@@ -257,7 +257,7 @@ class CatalogArraysLanguageLoader extends ArraysLanguageLoader
         // Finally, load the various 'other' language files that have definitions used
         // on multiple pages.
         //
-        // Each of these files is first loaded from the 'fallback' (i.e. 'german') subdirectory,
+        // Each of these files is first loaded from the 'fallback' (i.e. 'english') subdirectory,
         // followed by the current session language directory and finally (if present) in the current
         // language's template-override directory.
         //

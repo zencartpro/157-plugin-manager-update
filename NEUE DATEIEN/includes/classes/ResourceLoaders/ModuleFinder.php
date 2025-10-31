@@ -5,7 +5,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: ModuleFinder.php for newer plugins 2025-10-27 20:11:24Z webchills $
+ * @version $Id: ModuleFinder.php for newer plugins 2025-09-12 16:11:24Z webchills $
  */
 namespace Zencart\ResourceLoaders;
 

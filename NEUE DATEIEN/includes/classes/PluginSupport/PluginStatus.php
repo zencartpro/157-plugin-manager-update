@@ -5,9 +5,8 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: PluginStatus.php for newer plugins 2025-10-30 15:54:16Z webchills $
+ * @version $Id: PluginStatus.php 2025-10-31 15:54:16Z webchills $
  */
-
 namespace Zencart\PluginSupport;
 
 class PluginStatus
